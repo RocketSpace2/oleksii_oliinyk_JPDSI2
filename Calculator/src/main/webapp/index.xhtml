@@ -21,8 +21,11 @@
 		<br />
 		<h:messages id="msg" />
 
-		<h:commandButton value="Dodaj" action="#{calcBB.calc()}"/>
+		<h:commandButton value="Oblicz" action="#{calcBB.calc()}"/>
 		<br />
+                <h:commandButton value="Oblicz (AJAX)" action="#{calcBB.calc_AJAX()}">
+			<f:ajax execute="@form" render="msg" />
+		</h:commandButton>
 		<h:commandLink value="Informacje" action="#{calcBB.info()}" />
 	</h:form>
 
