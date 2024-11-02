@@ -19,7 +19,7 @@ public class CalcBB {
     FacesContext ctx;
 
     public Double getLoanAmount() {
-        return (loanAmount);
+        return loanAmount;
     }
 
     public void setLoanAmount(Double loanAmount) {
@@ -27,7 +27,7 @@ public class CalcBB {
     }
 
     public Double getInterestRate() {
-        return (interestRate);
+        return interestRate;
     }
 
     public void setInterestRate(Double interestRate) {
@@ -35,7 +35,7 @@ public class CalcBB {
     }
 
     public Integer getNumberOfMonths() {
-        return (numberOfMonths);
+        return numberOfMonths;
     }
 
     public void setNumberOfMonths(Integer numberOfMonths) {
