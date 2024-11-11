@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title><ui:insert name="title">...</ui:insert></title>
+    <link type="image/x-icon" rel="shortcut icon" href="#{resource['template:img/calculator.png']}" />
+</h:head>
+<h:body>
+    <ui:insert name="header">
+        <div id="header">
+            <ui:include src="/templates/header.xhtml" />
+        </div>
+    </ui:insert>
+    <p:panel header="Kalkulator kredytowy" style="margin: 1em auto;">
+        <div id="content">
+            <ui:insert name="content"></ui:insert>
+        </div>
+    </p:panel>
+    <ui:insert name="footer">
+        <div id="footer">
+            <ui:include src="/templates/footer.xhtml" />
+        </div>
+    </ui:insert> 
+</h:body>
+</html>
